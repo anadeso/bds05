@@ -1,6 +1,5 @@
 package com.devsuperior.movieflix.tests;
 
-import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.httpBasic;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -33,7 +32,7 @@ public class TokenUtil {
 		ResultActions result = mockMvc
 				.perform(post("/oauth/token")
 						.params(params)
-						.with(httpBasic(clientId, clientSecret))
+				//		.with(httpBasic(clientId, clientSecret))
 						.accept("application/json;charset=UTF-8"))
 						.andExpect(status().isOk())
 						.andExpect(content().contentType("application/json;charset=UTF-8"));

@@ -11,7 +11,7 @@ public class ReviewTests {
 		Review entity = new Review();
 		entity.setId(1L);
 		entity.setText("Text");
-		entity.setMovie(new Movie());
+		//entity.setMovie(new Movie());
 		entity.setUser(new User());
 	
 		Assertions.assertNotNull(entity.getId());
