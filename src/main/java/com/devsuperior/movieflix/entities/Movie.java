@@ -20,12 +20,12 @@ public class Movie implements Serializable {
     private String imgUrl;
     private String synopsis;
 
-    @OneToMany(mappedBy = "movie")
-    private List<Review> reviews = new ArrayList<>();
-
     @ManyToOne
     @JoinColumn(name = "genre_id")
     private Genre genre;
+
+    @OneToMany(mappedBy = "movie")
+    private List<Review> reviews = new ArrayList<>();
 
     public Movie() {
 
