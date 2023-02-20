@@ -15,7 +15,7 @@ public class MovieTests {
 		entity.setSynopsis("Synopsis");
 		entity.setYear(2021);
 		entity.setImgUrl("https://imgurl.com/img.png");
-	//	entity.setGenre(new Genre());
+	    entity.setGenre(new Genre());
 	
 		Assertions.assertNotNull(entity.getId());
 		Assertions.assertNotNull(entity.getTitle());
@@ -23,7 +23,7 @@ public class MovieTests {
 		Assertions.assertNotNull(entity.getSynopsis());
 		Assertions.assertNotNull(entity.getYear());
 		Assertions.assertNotNull(entity.getImgUrl());
-	//	Assertions.assertNotNull(entity.getGenre());
+		Assertions.assertNotNull(entity.getGenre());
 		Assertions.assertEquals(0, entity.getReviews().size());
 	}
 }

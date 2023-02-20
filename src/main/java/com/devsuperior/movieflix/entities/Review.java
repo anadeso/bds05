@@ -61,6 +61,10 @@ public class Review implements Serializable {
         return movie;
     }
 
+    public void setMovie(Movie movie) {
+        this.movie = movie;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
