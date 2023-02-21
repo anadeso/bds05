@@ -45,4 +45,12 @@ public class UserService implements UserDetailsService {
         logger.info("User found: " + username);
         return user;
     }
+
+    @Transactional(readOnly = true)
+    public UserDTO findProfile() {
+        User authenticated = authService.authenticated();
+        authenticated = repository.findByEmail(authenticated.getEmail());
+
+        return new UserDTO(authenticated);
+    }
 }
