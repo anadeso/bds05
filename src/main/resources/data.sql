@@ -19,5 +19,7 @@ INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUE
 INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUES ('Avatar: The Way of Water', 'Avatar: The Way of Water', 2022, 'https://imgurl.com/img.png', 'Jake Sully lives with his new family on the extrasolar moon Pandora. As a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Navi race to protect his home.', 4);
 INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUES ('John Wick: Chapter 4', 'John Wick: Chapter 4', 2023, 'https://imgurl.com/img.png', 'John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.', 1);
 
-INSERT INTO tb_review (text, user_id, movie_id) VALUES ('Text', 1, 1);
+INSERT INTO tb_review (text, user_id, movie_id) VALUES ('Meh, filme ok', 1, 1);
+INSERT INTO tb_review (text, user_id, movie_id) VALUES ('Bah, filme ok', 1, 1);
+INSERT INTO tb_review (text, user_id, movie_id) VALUES ('Filme sensacional!', 1, 3);
 
