@@ -10,6 +10,8 @@ public class MovieDTO {
     private String imgUrl;
     private String synopsis;
 
+    private GenreDTO genre;
+
     public MovieDTO() {
 
     }
@@ -28,6 +30,7 @@ public class MovieDTO {
         year = entity.getYear();
         imgUrl = entity.getImgUrl();
         synopsis = entity.getSynopsis();
+        genre = new GenreDTO(entity.getGenre());
     }
 
     public String getTitle() {
@@ -68,5 +71,9 @@ public class MovieDTO {
 
     public void setSynopsis(String synopsis) {
         this.synopsis = synopsis;
+    }
+
+    public GenreDTO getGenre() {
+        return genre;
     }
 }
