@@ -8,7 +8,16 @@ INSERT INTO tb_role (authority) VALUES ('ROLE_MEMBER');
 INSERT INTO tb_user_role (user_id, role_id) VALUES (1, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (2, 2);
 
-INSERT INTO tb_genre (name) VALUES ('Maria');
-INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUES ('Title', 'subTitle', 2021, 'https://imgurl.com/img.png', 'Synopsis', 1);
+INSERT INTO tb_genre (name) VALUES ('Ação e aventura');
+INSERT INTO tb_genre (name) VALUES ('Drama');
+INSERT INTO tb_genre (name) VALUES ('Comédia romântica');
+INSERT INTO tb_genre (name) VALUES ('Ficção científica');
+INSERT INTO tb_genre (name) VALUES ('Terror');
+
+INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUES ('Hopes Legacy', 'Legacy', 2021, 'https://imgurl.com/img.png', 'Sometimes hope is all you need, but sometimes it can be hard to find', 1);
+INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUES ('The Shawshank Redemption', 'The Shawshank Redemption', 1994, 'https://imgurl.com/img.png', 'Two imprisoned men come together over the course of several years, finding solace and eventual redemption through common acts of decency.', 1);
+INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUES ('Avatar: The Way of Water', 'Avatar: The Way of Water', 2022, 'https://imgurl.com/img.png', 'Jake Sully lives with his new family on the extrasolar moon Pandora. As a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Navi race to protect his home.', 4);
+INSERT INTO tb_movie (title, sub_Title, year, img_Url, synopsis, genre_id) VALUES ('John Wick: Chapter 4', 'John Wick: Chapter 4', 2023, 'https://imgurl.com/img.png', 'John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.', 1);
+
 INSERT INTO tb_review (text, user_id, movie_id) VALUES ('Text', 1, 1);
 
